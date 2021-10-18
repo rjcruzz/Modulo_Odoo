@@ -10,6 +10,21 @@
            </tree>        
         </field>
     </record>
+
+    <record id="view_form_personal" model="ir.ui.view">
+        <field name="name">view_form_personal</field>
+        <field name="model">mod.personal</field>
+        <field name="arch" type="xml">
+           <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="Descripcion"/>
+                        <field name="status" string="Estado de la tarea"/>
+                    </group>
+                </sheet>
+           </form>        
+        </field>
+    </record>
     
     <record id="action_view_personal" model="ir.actions.act_window">
         <field name="name">LISTA DE TAREA</field>

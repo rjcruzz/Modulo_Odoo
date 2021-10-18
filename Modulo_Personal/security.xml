@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="model_acces_personal" model="ir.access.model">
+        <field name="name">mode.access.personal</field>
+        <field name="model_id" ref="mod.personal.model_mod_personal"/>
+        <field name="group_id" ref=""/>
+        <field name="perm_read" eval="1" />
+        <field name="perm_write" eval="1" />
+        <field name="perm_create" eval="1" />
+        <field name="perm_unlink" eval="1" />
+    </record>
+
+</odoo>
+>
