@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tree_personal" model="ir.ui.view">
+        <field name="name">view_tree_personal</field>
+        <field name="model">mod.personal</field>
+        <field name="arch" type="xml">
+           <tree>
+                <field name="name" />
+                <field name="status" />
+           </tree>        
+        </field>
+    </record>
+    
+    <record id="action_view_personal" model="ir.actions.act_window">
+        <field name="name">LISTA DE TAREA</field>
+        <field name="res_model">mod.personal</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_personal"
+        parent=""
+        action="modulo_personal.action_view_personal"/>
+</odoo>
